@@ -1,11 +1,13 @@
 import win32com.client as win32
+import os
+from time import sleep
 
-def enviaEmail():
+def enviaEmail(arquivo):
     outlook = win32.Dispatch('outlook.application')
 
     email = outlook.CreateItem(0)
 
-    with open('arquivo.txt', 'r', encoding = 'UTF-8') as arq:
+    with open(f'arquivos/{arquivo}', 'r', encoding = 'UTF-8') as arq:
         linhas = arq.readlines()
         for i in linhas:
             if "Email :" in i:
@@ -26,3 +28,9 @@ def enviaEmail():
     email.Send()
 
     print(f'Email enviado com sucesso para {receptor}')
+    sleep(30)
+    
+pasta = os.listdir('arquivos/')
+
+for arquivo in pasta:
+    enviaEmail(arquivo)
