@@ -1,0 +1,7 @@
+Email : kevinfelipe.gr@gmail.com
+Assunto a ser colocado no email : Sendind mail to Kevin
+
+This is a semple of the type file that needs to have an e-mail adrees and optionally subject.
+
+The program will take as an email address the content after the sequence of characters "Email :" and the subject will be what comes after "Assunto a ser colocado no email :". If there's no subject the program will take "Envio de curriculum" as subject.
+
