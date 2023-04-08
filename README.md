@@ -18,6 +18,8 @@ The meaning of this project is to send my curriculum automatically to the compan
 
 :small_blue_diamond: [Files](#files)
 
+:small_blue_diamond: [Folder "arquivos"](#folder-arquivos)
+
 :small_blue_diamond: [How to run the code](#how-to-run-the-code)
 
 ## Technologies used:
@@ -40,7 +42,7 @@ The meaning of this project is to send my curriculum automatically to the compan
   <li><b>curriculum.html: </b> this file has the informatio that will be insearted in the body of the E-mail.</li>
 </ul>
 
-## Folder "arquivos:"
+## Folder "arquivos":
   <p>This is the folder which you will create the files containing the mails and subjects. inside the folder you can find an exemple file to see how is the sintax. The program will take as an email address the content after the sequence of characters "Email :" and the subject will be what comes after "Assunto a ser colocado no email :". If there's no subject the program will take "Envio de curriculum" as subject.</p>
 
   <p>The sintax is like this because of the apinfo.com (job site). so you just have to copy the e-mail address and the subject by there and paste in the file.</p>
@@ -52,9 +54,9 @@ The meaning of this project is to send my curriculum automatically to the compan
 ### Requirements:
 
 <ul>
-<li>Python</li>
-<li>Pywin32</li>
-<li>Windows mail</li>
+<li>Python;</li>
+<li>Pywin32;</li>
+<li>Windows mail.</li>
 </ul>
 <div style='display:flex'>
     <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" height="60px" width="60px"/>
