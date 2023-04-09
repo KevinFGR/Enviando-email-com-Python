@@ -1,14 +1,18 @@
 # Enviando-email-com-Python
 Using python to send automatic emails
 
+<div align=center>
+<img src="https://user-images.githubusercontent.com/109561598/230802298-c9c37f3b-7d4c-4e1e-be65-d6d56b52edb1.png" height="200px" alt="Logo do projeto">
+</div>
+
 ## About the project:
 
 <p>This program was made in python using the library Pywin32 used to give the Python the power of work with some Windows tools like the Windows Mail.
-The meaning of this project is to send my curriculum automatically to the companie's emails. The script is made in python and does the following actions:</p>
+The meaning of this project is to send my curriculum automatically to the companie's emails. The script does the following actions:</p>
 <ul>
 <li>Open all the files of folder "arquivos" one by one to get the mail address and the subject;</li>
 <li>Get the content of the file "curruculum.html" wich has my HTML curriculum version;</li>
-<li>Format and sand the email heaving my curriculum as the body for the address indicated in the file.</li> 
+<li>Format and send the email heaving my curriculum as the body for the address indicated in the file.</li> 
 </ul>
 
 
@@ -39,7 +43,7 @@ The meaning of this project is to send my curriculum automatically to the compan
 ## Files:
 <ul>
   <li><b>app.py: </b>The main file of the project. this is the file which has the Python script to send the mail;</li>
-  <li><b>curriculum.html: </b> this file has the informatio that will be insearted in the body of the E-mail.</li>
+  <li><b>curriculum.html: </b> this file has the information that will be insearted in the body of the E-mail.</li>
 </ul>
 
 ## Folder "arquivos":
@@ -65,12 +69,12 @@ The meaning of this project is to send my curriculum automatically to the compan
 
 ### Hands-on:
 <ol>
-  <li>If you don't have Python installed in your computer, you can intall following this link:</li>
+  <li>If you don't have Python installed in your computer, you can install following this link:</li>
   
 ```
 https://www.python.org/downloads/
 ```
-  <li>To install the pywin32 open the your comand propt and set this code:</li>
+  <li>To install the pywin32 open the command prompt and set this code:</li>
   
 ```
 pip install pywin32
