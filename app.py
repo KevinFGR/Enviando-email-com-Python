@@ -13,22 +13,22 @@ def enviaEmail(arquivo):
             if "Email :" in i:
                 receptor = i
             if "Assunto a ser colocado no email :" in i:
-                assunto = i
-                assunto = assunto.split(':')[1].strip()
+                assunto = i.split(':')[1].strip()
     
     try: assunto # conferindo de se há um assunto inserido corretamente no arquivo
     except:
         assunto = "Envio de curriculum"
     try: 
-        receptor #conferindo se há um email inserido corretamento no arquivo
+         #conferindo se há um email inserido corretamento no arquivo
         receptor = receptor.split(':')[1].strip()
     
         with open('curriculum.html', 'r', encoding='UTF-8') as arq:
             conteudo = arq.read()
 
+
         email.To = receptor
         email.Subject = assunto
-        email. HTMLBody = conteudo
+        email.HTMLBody = conteudo
 
         email.Send()
 
@@ -37,11 +37,12 @@ def enviaEmail(arquivo):
     except:
         nomeArq = os.path.basename(arquivo)
         print(f'O arquivo {nomeArq} não possui um email')
-        
-
+    
 if __name__ =='__main__':
     pasta = os.listdir('arquivos/')
-
+    cont = 0
     for arquivo in pasta:
         enviaEmail(arquivo)
-
+        cont += 1
+    
+    print(f'{cont} emails enviados')
