@@ -42,7 +42,8 @@ if __name__ =='__main__':
     pasta = os.listdir('arquivos/')
     cont = 0
     for arquivo in pasta:
-        enviaEmail(arquivo)
+        try: enviaEmail(arquivo)
+        except: print(f"Algo deu errado com o arquivo {arquivo}")
         cont += 1
     
     print(f'{cont} emails enviados')
