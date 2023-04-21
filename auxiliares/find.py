@@ -6,10 +6,8 @@ import os
 def main():
     char = input("insert sequence of characters you want to find:")
     print('finding ...')
-    #try: 
+
     find(char)
-    #except:
-        #print('Ops, something went wrong.')
 
 def find(char):
     dir = os.listdir('../arquivos/')
@@ -21,7 +19,7 @@ def find(char):
 
 if __name__ == "__main__":
     while True:
-        print("\nPress ctrl+c if you want to exit.")
+        print('\nPress ctrl + C than Enter if you want to exit.')
         try: main()
         except: 
             print("\nclosing program")
