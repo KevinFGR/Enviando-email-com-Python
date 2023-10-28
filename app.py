@@ -22,7 +22,7 @@ def enviaEmail(arquivo):
          #conferindo se há um email inserido corretamento no arquivo
         receptor = receptor.split(':')[1].strip()
     
-        with open('curriculum.html', 'r', encoding='UTF-8') as arq:
+        with open('cartaAP.html', 'r', encoding='UTF-8') as arq:
             conteudo = arq.read()
 
 
@@ -37,7 +37,7 @@ def enviaEmail(arquivo):
     except:
         nomeArq = os.path.basename(arquivo)
         print(f'O arquivo {nomeArq} não possui um email')
-    
+
 if __name__ =='__main__':
     pasta = os.listdir('arquivos/')
     cont = 0
@@ -47,3 +47,4 @@ if __name__ =='__main__':
         cont += 1
     
     print(f'{cont} emails enviados')
+    
